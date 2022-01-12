@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 80vw;
+    height: 80vh;
+    transform: translate(10%,10%);
+    box-shadow: rgb(0 0 0 / 50%) 0 0 10px 9px;
+}
+.tile{
+    background-color: gainsboro;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    box-shadow: 0 0 0 1px #333333;
+    line-height: 100px;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+.x::after {
+    content: '❌';
+}
+.o::after {
+    content: '⭕';
+}
+.game-over {
+    display: none;
+    position: absolute;
+    height:100vh;
+    box-shadow: rgb(0 0 0 / 50%) 0 0 0 9999px;
+}
+.game-over-message {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    font-size: 100px;
+    color: rgb(29, 121, 90);
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    bottom: 40%;
+}
+.visible {
+    display: block;
+}
+.bgColor {
+    background-color: rgb(47, 128, 194);
+}
