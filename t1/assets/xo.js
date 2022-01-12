@@ -53,10 +53,10 @@ const board = {
 		  document.querySelector(".game-over-message").textContent = xWins
 			? "X wins!"
 			: "O wins!";
-			winBgX.forEach((value) => {
-			  value.style.background = "yellow";
+			// winBgX.forEach((value) => {
+			//   value.style.background = "yellow";
 			 
-			});
+			// });
 		}
 	  });
 	}
